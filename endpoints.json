@@ -1,0 +1,234 @@
+{
+  "endpoints": [
+    {
+      "name": "🤖 ROBOTS",
+      "path": "/robots.txt",
+      "description": "peut lister des chemins cachés"
+    },
+    {
+      "name": "🗺️ SITEMAP",
+      "path": "/sitemap.xml",
+      "description": "URLs listées; vérifier sitemap_index.xml et .xml.gz"
+    },
+    {
+      "name": "🗺️ SITEMAP INDEX",
+      "path": "/sitemap_index.xml",
+      "description": "index de sitemaps"
+    },
+    {
+      "name": "📁 SITEMAP COMPRESSED",
+      "path": "/sitemap.xml.gz",
+      "description": "sitemaps compressés"
+    },
+    {
+      "name": "📜 HUMANS",
+      "path": "/humans.txt",
+      "description": "infos éditeur/contact"
+    },
+    {
+      "name": "📄 LICENSE",
+      "path": "/license.txt",
+      "description": "licence ou mentions légales"
+    },
+    {
+      "name": "📄 README",
+      "path": "/README.md",
+      "description": "infos/projets publiés"
+    },
+    {
+      "name": "🔖 CHANGELOG",
+      "path": "/CHANGELOG.md",
+      "description": "historique de versions"
+    },
+    {
+      "name": "🔐 ENV",
+      "path": "/.env",
+      "description": "variables d'environnement (souvent sensibles)"
+    },
+    {
+      "name": "🔐 ENV (alt)",
+      "path": "/env",
+      "description": "variante (sans point)"
+    },
+    {
+      "name": "🔐 ENV VARIANTS",
+      "path": "/.env.local",
+      "description": "autres variantes .env.*"
+    },
+    {
+      "name": "🔐 CONFIG.PHP",
+      "path": "/config.php",
+      "description": "config PHP possible"
+    },
+    {
+      "name": "🔐 WP-CONFIG",
+      "path": "/wp-config.php",
+      "description": "WordPress config (sensible)"
+    },
+    {
+      "name": "🔐 .htpasswd",
+      "path": "/.htpasswd",
+      "description": "auth HTTP basique"
+    },
+    {
+      "name": "🔐 .ssh AUTHORIZED_KEYS",
+      "path": "/.ssh/authorized_keys",
+      "description": "clefs SSH exposées"
+    },
+    {
+      "name": "🔐 AWS CREDENTIALS",
+      "path": "/.aws/credentials",
+      "description": "credentials cloud potentiels"
+    },
+    {
+      "name": "💻 GIT",
+      "path": "/.git/",
+      "description": "si accessible, peut récupérer le repo"
+    },
+    {
+      "name": "💻 GIT - HEAD",
+      "path": "/.git/HEAD",
+      "description": "vérifier existence avant dump"
+    },
+    {
+      "name": "💻 SVN",
+      "path": "/.svn/entries",
+      "description": "SVN exposé"
+    },
+    {
+      "name": "💻 .gitignore",
+      "path": "/.gitignore",
+      "description": "fichiers ignorés mais intéressants"
+    },
+    {
+      "name": "💾 BACKUPS DIR",
+      "path": "/backup/",
+      "description": "backups ou archives"
+    },
+    {
+      "name": "🖼️ THUMBS",
+      "path": "/Thumbs.db",
+      "description": "miniatures Windows"
+    },
+    {
+      "name": "🖼️ DS_STORE",
+      "path": "/.DS_Store",
+      "description": "macOS — peut révéler structure"
+    },
+    {
+      "name": "🧭 MANIFEST",
+      "path": "/manifest.json",
+      "description": "web app manifest, endpoints mobiles"
+    },
+    {
+      "name": "📡 SWAGGER",
+      "path": "/swagger.json",
+      "description": "spécification API"
+    },
+    {
+      "name": "📡 SWAGGER UI",
+      "path": "/swagger-ui/",
+      "description": "interface doc API"
+    },
+    {
+      "name": "📡 OPENAPI JSON",
+      "path": "/openapi.json",
+      "description": "spécification OpenAPI"
+    },
+    {
+      "name": "📡 API DOCS",
+      "path": "/api-docs/",
+      "description": "doc interactive"
+    },
+    {
+      "name": "📡 GRAPHQL",
+      "path": "/graphql",
+      "description": "endpoint GraphQL (tester /graphiql)"
+    },
+    {
+      "name": "🔐 SECURITY.TXT",
+      "path": "/.well-known/security.txt",
+      "description": "contact signal vuln"
+    },
+    {
+      "name": "🔄 CHANGE-PASSWORD",
+      "path": "/.well-known/change-password",
+      "description": "reset endpoint standard"
+    },
+    {
+      "name": "📱 ASSETLINKS",
+      "path": "/.well-known/assetlinks.json",
+      "description": "Android app link"
+    },
+    {
+      "name": "🍎 AASA",
+      "path": "/.well-known/apple-app-site-association",
+      "description": "iOS app link"
+    },
+    {
+      "name": "🔎 HOST-META",
+      "path": "/.well-known/host-meta",
+      "description": "discovery générale"
+    },
+    {
+      "name": "🔧 ADMIN",
+      "path": "/admin/",
+      "description": "page admin fréquemment exposée"
+    },
+    {
+      "name": "🔧 LOGIN",
+      "path": "/login",
+      "description": "page d'authentification"
+    },
+    {
+      "name": "🔧 DEV / STAGING",
+      "path": "/staging/",
+      "description": "environnements oubliés"
+    },
+    {
+      "name": "🔧 TEST",
+      "path": "/test/",
+      "description": "pages de test / debug"
+    },
+    {
+      "name": "🖥️ SERVER STATUS",
+      "path": "/server-status",
+      "description": "Apache mod_status (si activé)"
+    },
+    {
+      "name": "📊 PHPINFO",
+      "path": "/phpinfo.php",
+      "description": "info PHP — dangereux s'exposé"
+    },
+    {
+      "name": "📌 STATUS PAGES",
+      "path": "/status",
+      "description": "pages health / metrics exposées"
+    },
+    {
+      "name": "📜 JS APP",
+      "path": "/assets/app.js",
+      "description": "chercher clefs/API endpoints/commentaires"
+    },
+    {
+      "name": "📜 CONFIG.JSON",
+      "path": "/config.json",
+      "description": "config front-end exposée"
+    },
+    {
+      "name": "📦 PACKAGE.JSON",
+      "path": "/package.json",
+      "description": "dépendances et scripts"
+    },
+    {
+      "name": "⚙️ composer.json",
+      "path": "/composer.json",
+      "description": "PHP deps et versions"
+    },
+    {
+      "name": "🔍 ADS.TXT",
+      "path": "/ads.txt",
+      "description": "éditeur publicitaire (monétisation)"
+    }
+  ]
+}

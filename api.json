@@ -1,0 +1,32 @@
+{
+  "shodan": {
+    "api_key": "YOUR_SHODAN_API_KEY",
+    "search_limit": 100,
+    "sample_ips_per_host": 3,
+    "link_style": "terminal",
+    "url_template": "https://securityvulnerability.io/vulnerability/{cve}"
+  },
+  "http_settings": {
+    "timeout": 12,
+    "max_lines": 8,
+    "max_line_length": 65,
+    "headers": {
+      "User-Agent": "Mozilla-Firefox"
+    }
+  },
+  "display_settings": {
+    "gradient_colors": [
+      [255, 105, 97],
+      [255, 180, 80],
+      [255, 255, 102],
+      [144, 238, 144],
+      [173, 216, 230],
+      [216, 191, 216]
+    ],
+    "shodan_colors": {
+      "blue_title": [100, 200, 255],
+      "host_ips_color": [173, 216, 230],
+      "red_exploits": [255, 99, 71]
+    }
+  }
+}
