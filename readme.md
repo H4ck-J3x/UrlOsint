@@ -8,8 +8,19 @@ A Linux-based OSINT tool for quick web reconnaissance and surface attack analysi
 
 - **50+ endpoint scanning**: robots.txt, .env, .git/, API docs, admin panels, backups
 - **Shodan integration**: DNS resolution, open ports, CVE detection
+- **Wayback Machine integration**: historical snapshots, archived URLs
 - **Colorful terminal UI**: RGB gradients, clickable hyperlinks
 
+---
+
+## 🔌 APIs Used
+
+| API | Purpose | API Key Required | Status |
+|----|--------|------------------|--------|
+| **Shodan** | Open ports, services, vulnerabilities (CVE) | 🔑 Yes | 🟢 Active |
+| **Wayback Machine** | Historical website archives | ❌ No | 🟢 Active |
+
+---
 
 ## 📦 Installation
 
