@@ -1,32 +1,33 @@
 {
+  "http_settings": {
+    "max_lines": 10,
+    "max_line_length": 120,
+    "timeout": 5,
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
+  },
   "shodan": {
     "api_key": "YOUR_SHODAN_API_KEY",
     "search_limit": 100,
     "sample_ips_per_host": 3,
     "link_style": "terminal",
-    "url_template": "https://securityvulnerability.io/vulnerability/{cve}"
+    "url_template": "https://nvd.nist.gov/vuln/detail/{cve}"
   },
-  "http_settings": {
-    "timeout": 12,
-    "max_lines": 8,
-    "max_line_length": 65,
-    "headers": {
-      "User-Agent": "Mozilla-Firefox"
-    }
+  "wayback": {
+    "timeout": 10,
+    "enabled": true
   },
   "display_settings": {
     "gradient_colors": [
-      [255, 105, 97],
-      [255, 180, 80],
-      [255, 255, 102],
-      [144, 238, 144],
-      [173, 216, 230],
-      [216, 191, 216]
+      [100, 150, 255],
+      [150, 100, 255],
+      [255, 100, 150]
     ],
     "shodan_colors": {
-      "blue_title": [100, 200, 255],
-      "host_ips_color": [173, 216, 230],
-      "red_exploits": [255, 99, 71]
+      "blue_title": [100, 150, 255],
+      "host_ips_color": [150, 200, 255],
+      "red_exploits": [255, 100, 100]
     }
   }
 }
